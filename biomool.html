@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSB - Joinville Stroke Biobank</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div id="progress-bar"></div>
+
+  <nav id="navbar">
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#historia">História</a></li>
+      <li><a href="#dados-avc">Dados AVC</a></li>
+      <li><a href="#processo">Metodologia</a></li>
+      <li><a href="#apoio">Programa Anjos</a></li>
+      <li><a href="#equipe">Time</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header id="hero">
+    <div class="hero-particles">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap reveal">
+        <img class="hero-logo" src="assets/images/logos/jsb-logo-branco.png" alt="JSB - Joinville Stroke Biobank e Univille">
+      </div>
+      <div class="hero-tag">Ciência de Excelência · UNIVILLE</div>
+      <p class="hero-sub">Armazenamento de material genético e cooperação científica avançada para mapear as causas do AVC e personalizar diagnósticos futuros.</p>
+      <div class="hero-stats">
+        <div class="hero-stat" data-tip="Amostras coletadas desde 2014">
+          <span class="num" data-count="11135">0</span>
+          <span class="lbl">Amostras Biológicas</span>
+        </div>
+        <div class="hero-stat" data-tip="Anos de pesquisa contínua">
+          <span class="num" data-count="12">0</span>
+          <span class="lbl">Anos de Pesquisa</span>
+        </div>
+        <div class="hero-stat" data-tip="Publicações científicas associadas">
+          <span class="num" data-count="47">0</span>
+          <span class="lbl">Publicações</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#processo" class="btn btn-primary">
+          Ver Fluxo Científico
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#apoio" class="btn btn-outline">Apoie o Biobanco</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">Role para baixo</div>
+  </header>
+
+  <section id="historia">
+    <div class="historia-grid">
+      <div class="reveal-left">
+        <span class="section-label">Pioneirismo Médico</span>
+        <h2 class="section-title">Uma trajetória consolidada no combate ao AVC</h2>
+        <div class="historia-text">
+          <p>A jornada do atendimento especializado em Joinville iniciou em <strong>1992</strong>, com a implementação de melhorias estruturais geradas por neurologistas da região.</p>
+          <p>Em <strong>1997</strong>, o Hospital Municipal São José inaugurou a primeira Unidade de AVC do país e realizou o <strong>primeiro procedimento de trombólise intravenosa do Brasil</strong>, reduzindo drasticamente taxas de mortalidade.</p>
+          <p>Para catalogar indicadores e entender fatores de risco, fundou-se o <strong>JOINVASC</strong> em 2005. A necessidade de ir além levou à união com a <strong>UNIVILLE</strong> em 2010, culminando em 2014 na oficialização do <strong>JSB</strong>.</p>
+        </div>
+        <div class="isber-badge">Conformidade ISBER – International Society for Biological and Environmental Repositories</div>
+      </div>
+      <div class="reveal-right">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1997</div>
+            <p class="timeline-desc">Inauguração da 1ª Unidade de AVC e Trombólise Intravenosa pioneira no Brasil.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2005</div>
+            <p class="timeline-desc">Criação do Registro de AVC de Joinville (JOINVASC), referência em gestão de saúde.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2010</div>
+            <p class="timeline-desc">Parceria JOINVASC + UNIVILLE criando o repositório inicial de tecidos biológicos.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2014</div>
+            <p class="timeline-desc">Institucionalização do Joinville Stroke Biobank (JSB) nos laboratórios da UNIVILLE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dados-avc">
+    <div style="text-align:center;max-width:800px;margin:0 auto 10px;" class="reveal">
+      <span class="section-label">Cenário Epidemiológico</span>
+      <h2 class="section-title">O impacto global do AVC e a urgência da pesquisa</h2>
+      <p class="section-desc" style="margin:0 auto;">Dados científicos globais comprovam que o AVC é uma das patologias com maior taxa de comprometimento físico e econômico.</p>
+    </div>
+    <div class="grid-3">
+      <div class="data-card reveal reveal-delay-1" data-modal="modal-casos">
+        <div class="data-stat">12.2M</div>
+        <h3>Casos Anuais</h3>
+        <p>Novos acidentes vasculares cerebrais ocorrem a cada ano, gerando demanda urgente por biomarcadores de prevenção.</p>
+      </div>
+      <div class="data-card reveal reveal-delay-2" data-modal="modal-risco">
+        <div class="data-stat">1 em 4</div>
+        <h3>Risco Populacional</h3>
+        <p>Uma a cada quatro pessoas acima de 25 anos sofrerá um evento de AVC ao longo da vida.</p>
+      </div>
+      <div class="data-card reveal reveal-delay-3" data-modal="modal-pib">
+        <div class="data-stat">0.66%</div>
+        <h3>Impacto no PIB</h3>
+        <p>Perdas financeiras globais ligadas ao tratamento e absenteísmo por AVC representam expressiva parcela da economia.</p>
+      </div>
+    </div>
+    <div class="riscos-box reveal">
+      <h4 class="riscos-title">Principais Fatores de Risco Investigados</h4>
+      <div class="riscos-tags">
+        <span class="risco-tag">Hipertensão Arterial</span>
+        <span class="risco-tag">Diabetes Mellitus</span>
+        <span class="risco-tag">Doenças Cardíacas</span>
+        <span class="risco-tag">Colesterol Elevado</span>
+        <span class="risco-tag">Tabagismo / Etilismo</span>
+        <span class="risco-tag">Genética Molecular</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="processo">
+    <div style="text-align:center;max-width:800px;margin:0 auto 50px;" class="reveal">
+      <span class="section-label">Metodologia Laboratorial</span>
+      <h2 class="section-title">O Fluxo de Gestão de Amostras</h2>
+      <p class="section-desc" style="margin:0 auto;">Ciclo rigoroso de coleta, processamento e guarda segura dos materiais biológicos.</p>
+    </div>
+    <div class="grid-3">
+      <div class="processo-card reveal reveal-delay-1">
+        <div class="processo-num">01</div>
+        <div class="processo-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3>Consentimento e Triagem</h3>
+        <p>Amostras obtidas de pacientes após aprovação em comitês éticos e assinatura do Termo de Consentimento Livre e Esclarecido (TCLE).</p>
+      </div>
+      <div class="processo-card reveal reveal-delay-2">
+        <div class="processo-num">02</div>
+        <div class="processo-icon">
+          <svg viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+        </div>
+        <h3>Isolamento Genético</h3>
+        <p>Processamento do sangue periférico para separação de soro, plasma e extração molecular de DNA/RNA em ambientes avançados.</p>
+      </div>
+      <div class="processo-card reveal reveal-delay-3">
+        <div class="processo-num">03</div>
+        <div class="processo-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        </div>
+        <h3>Criopreservação</h3>
+        <p>Armazenamento em ultrafreezers de alta tecnologia (−80°C), catalogando e resguardando amostras para pesquisas futuras.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apoio">
+    <div class="apoio-header reveal">
+      <span class="section-label">Sustentabilidade Científica</span>
+      <h2 class="section-title">Programa Anjos do Biobanco</h2>
+      <p class="section-desc">Iniciativa estruturada para integrar doações da iniciativa privada e da sociedade civil, voltada à expansão de pesquisas de alto impacto na UNIVILLE.</p>
+    </div>
+    <div class="apoio-grid">
+      <div class="apoio-card reveal reveal-delay-1">
+        <div class="apoio-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <h3>Insumos Laboratoriais</h3>
+        <p>Garantia de reagentes moleculares para extração contínua de novas amostras de DNA e RNA.</p>
+      </div>
+      <div class="apoio-card reveal reveal-delay-2">
+        <div class="apoio-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+        </div>
+        <h3>Estrutura Tecnológica</h3>
+        <p>Manutenção e contingenciamento elétrico dos criopreservadores e equipamentos analíticos.</p>
+      </div>
+      <div class="apoio-card reveal reveal-delay-3">
+        <div class="apoio-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h3>Fomento à Pesquisa</h3>
+        <p>Apoio financeiro a bolsas técnicas de acadêmicos e pesquisadores de pós-graduação dedicados ao projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe">
+    <div class="equipe-layout">
+      <div class="reveal-left">
+        <span class="section-label">Corpo de Pesquisa</span>
+        <h2 class="section-title">Conheça Nosso Time</h2>
+        <p style="color:var(--cinza-texto);margin-bottom:24px;">Profissionais dedicados à governança, coleta diária e conformidade técnica do biobanco.</p>
+        <div class="membros-grid">
+          <div class="membro-card">
+            <h4>Leslie Ecker Ferreira</h4>
+            <span>Gerente Institucional</span>
+          </div>
+          <div class="membro-card">
+            <h4>Paulo Henrique C. de França</h4>
+            <span>Gerente Institucional</span>
+          </div>
+          <div class="membro-card">
+            <h4>Barbara Schminsky de França</h4>
+            <span>Técnica Laboratorial</span>
+          </div>
+          <div class="membro-card">
+            <h4>Leticia Peixer</h4>
+            <span>Enfermeira de Pesquisa</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">Cooperação</span>
+        <h2 class="section-title">Nossos Parceiros</h2>
+        <div style="margin-top:32px;">
+          <div class="parceiro-item">Registro Epidemiológico de Joinville — <strong>JOINVASC</strong></div>
+          <div class="parceiro-item">Laboratório de Genética Molecular — <strong>FCM / UNICAMP</strong></div>
+          <div class="parceiro-item">Universidade da Região de Joinville — <strong>UNIVILLE</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/images/logos/jsb-logo-branco.png" alt="JSB - Joinville Stroke Biobank e Univille">
+    </div>
+    <p>&copy; 2026 Joinville Stroke Biobank (JSB). Todos os direitos reservados.</p>
+    <p>Mantido por <a href="https://univille.br" target="_blank">UNIVILLE</a></p>
+  </footer>
+
+  <button id="back-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Modais de informação -->
+  <div class="modal-overlay" id="modal-casos">
+    <div class="modal">
+      <button class="modal-close" data-close="modal-casos">×</button>
+      <span class="modal-label">Dados Globais 2024</span>
+      <h2>12,2 Milhões de Casos</h2>
+      <p>O AVC afeta mais de 12 milhões de pessoas anualmente em todo o mundo, sendo a segunda principal causa de morte e a terceira de incapacidade permanente.</p>
+      <p>No Brasil, são aproximadamente 400.000 novos casos por ano, com alta prevalência nas regiões Sul e Sudeste — contexto onde o JSB desempenha papel estratégico.</p>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal-risco">
+    <div class="modal">
+      <button class="modal-close" data-close="modal-risco">×</button>
+      <span class="modal-label">Risco Populacional</span>
+      <h2>1 em Cada 4 Pessoas</h2>
+      <p>Segundo a Global Burden of Disease Study, uma a cada quatro pessoas com mais de 25 anos terá um AVC ao longo da vida. O risco aumenta significativamente com a presença de fatores modificáveis.</p>
+      <p>A pesquisa em biomarcadores genéticos, foco do JSB, possibilita identificar populações de maior risco antes do primeiro evento.</p>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal-pib">
+    <div class="modal">
+      <button class="modal-close" data-close="modal-pib">×</button>
+      <span class="modal-label">Impacto Econômico</span>
+      <h2>0,66% do PIB Global</h2>
+      <p>Os custos diretos e indiretos relacionados ao AVC — incluindo hospitalização, reabilitação, perda de produtividade e cuidados de longo prazo — representam expressiva parcela do PIB mundial.</p>
+      <p>Investir em prevenção e pesquisa, como o trabalho do JSB, é economicamente mais eficiente do que tratar sequelas estabelecidas.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
